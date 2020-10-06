@@ -4,5 +4,10 @@
   [ ] RoomsInitializer
 
 ### So far:
-- 15:00 - Created React App & Installed NPM packages
-- 15:01 - Added launch.json
+- 10/6/2020
+  - 15:00 - Created React App & Installed NPM packages
+  - 15:01 - Added launch.json, server is up and running
+  - 15:04 - Initialized Github repository
+  - 15:07 - Created RoomsContext.js
+  - 15:14 - Finished room initializer with pricing function
+  - 15:17 Added localStorage synchronization, appended to App.js, testing
