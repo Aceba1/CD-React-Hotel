@@ -1,27 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
+import { generateRooms } from '../utils/generateRooms';
 
 export const RoomsContext = createContext();
-
-function roomPrice(floor, room) {
-  // Price: ($50 x floorNum) + ($10 x roomNum - 10$) + ($45)
-  return (50 * floor) + (10 * room) + 35; 
-}
-
-function generateRooms(floors, rooms) {
-  let result = []
-  for (let f = 1; f <= floors; f++) {
-    let arr = [];
-    for (let r = 1; r <= rooms; r++) {
-      arr.push({
-        room: f*100+r, 
-        renter: null,
-        price: roomPrice(f, r) 
-      });
-    }
-    result.push(arr);
-  }
-  return result;
-}
 
 export default function RoomsContextProvider(props) {
   const [rooms, setRooms] = useState(() => {
