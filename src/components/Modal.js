@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 function Modal(props) {
   return (
@@ -8,6 +9,10 @@ function Modal(props) {
       </div>
     </div>
   )
+}
+
+Modal.props = {
+  hide: PropTypes.func
 }
 
 export default Modal

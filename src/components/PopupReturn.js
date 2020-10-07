@@ -1,10 +1,13 @@
 
 import React, { useContext, useState } from 'react'
+import { BalanceContext } from '../contexts/BalanceContext';
 import { RoomsContext } from '../contexts/RoomsContext'
 import modifyRoom from '../utils/modifyRoom';
+import { pinPrice } from '../utils/roomPrice';
 import Modal from './Modal';
 
 export default function PopupReturn(props) {
+  const {balance, setBalance} = useContext(BalanceContext);
   const {rooms, setRooms} = useContext(RoomsContext);
   const [log, setLog] = useState("")
   const [name, setName] = useState("")
@@ -16,6 +19,7 @@ export default function PopupReturn(props) {
 
     if (_name.toLowerCase() === props.room.renter.trim().toLowerCase()) {  
       setRooms(modifyRoom(rooms, props.room.room, {renter: null})); // Set rooms
+      setBalance({...balance, store:balance.store - pinPrice, pinned:balance.pinned - pinPrice})
       props.hide();
     } else {
       setLog("Wrong Name!");

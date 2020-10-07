@@ -42,3 +42,19 @@
   - 19:33 - Confirmed state with instructor, cleaning up unused code (& recovering from memory crash)
   - 19:50 - Moved modal to new component, updated styling for express & return to match, cleaned up return prompt log, changed prompts to forms to allow enter key
   - 20:00 - Added auto-focusing to prompts, cleaned up all warnings. Done.
+- 10/7/2020
+  - 13:20 - Created Balance.js & BalanceContext.js
+  - 13:28 - Added localStorage saving & loading to BalanceContext.js, incoroprating Context to App.js, and Balance to NavBar.js
+  - 13:36 - Styling Balance.js to appear properly on NavBar, decided to make it part of the NavBar buttons. 
+  - 13:40 - Added state for Balance.js to conditionally show and hide Modal, defined Modal.js PropTypes
+  - 13:43 - Merged Balance types, populating Balance's Modal content
+  - 13:46 - Resolved 'missing content' imposed by NavBar styling
+  - 13:51 - Synchronized more css styling, removed duplicate entries
+  - 14:00 - Reworked BalanceContext.js to hold a pinned-wealth amount, adding functionality to Balance modal
+  - 14:06 - Debugging undefined values, discovered previous stored type in local memory and missing 'JSON.stringify' call
+  - 14:17 - Added functionality to Balance.js, can now 'deposit' unpinned funds to the 'bank'. Expanded usability of 'inactive' button styling. Testing is responsive
+  - 14:27 - Fighting .css theming and logical PEMDAS to individualize NavBar buttons from other elements
+  - 14:38 - Finished style reworking, bank property addition within BalanceContext and usage within Balance. *No more*
+  - 14:44 - Added 'pinPrice' to roomPrice export, this will be used when renting and returning rooms
+  - 14:47 - Updated ExpressRental to use BalanceContext and 'pinPrice', now adds funds to stored Balance
+  - 14:55 - Finished integration with PopupReturn, all systems functional. Presenting results to instructor

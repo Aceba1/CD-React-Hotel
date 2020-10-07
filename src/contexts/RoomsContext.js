@@ -10,7 +10,7 @@ export default function RoomsContextProvider(props) {
 
   useEffect(() => {
     localStorage.setItem("rooms", JSON.stringify(rooms));
-  }, [rooms])
+  }, [rooms]);
 
 
   return (

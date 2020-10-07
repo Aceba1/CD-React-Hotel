@@ -1,4 +1,4 @@
-import { roomPrice } from "./roomPrice";
+import roomPrice from "./roomPrice";
 
 export function generateRooms(floors, rooms) {
   let result = [];

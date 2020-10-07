@@ -25,7 +25,6 @@ code {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,23 +35,34 @@ code {
   display: block;
   width: 100%;
 }
-.App-header nav button {
+.nav-button {
   font-size: 1rem;
-  margin: 12px 12px 0px;
+  margin: 12px 8px 0px;
   height: 30px;
-  width: 30%;
+  width: 35%;
   max-width: 200px;
   border-style: none;
   color: #fff;
   background-color:  #3d495f
 }
-.App-header nav button:hover {
+
+.disabled {
+  color: #bbb;
+}
+
+button.inactive {
+  background-color:  #3d495f;
+}
+
+.nav-button:hover,
+button.inactive:hover {
   background-color:  #435474
 }
-.App-header nav button:active {
+.nav-button:active,
+button.inactive:active {
   background-color:  #2b3e61
 }
-.App-header nav button.active {
+.nav-button.active {
   background-color:  #4d7ce0
 }
 
@@ -97,19 +107,16 @@ code {
   text-align: center;
 }
 
-.express p {
+.express .title {
   margin: 0px 0px 12px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
-.express label {
+.label {
   color: #444;
   font-size: 0.9rem;
 }
 
-.express input {
+.text-input {
   margin: 4px auto;
   padding: 4px;
 }
@@ -130,12 +137,8 @@ code {
   background-color:  #4d7ce0;
 }
 
-.return {
-  padding: 16px 32px;
-}
 
-
-.return .title{
+.title{
   font-style: italic;
   margin: 0px;
   font-size: 1.2rem;
@@ -145,6 +148,39 @@ code {
   padding: 4px;
   vertical-align: top;
   margin: 12px 12px 0px;
+}
+
+.balance {
+  min-width: 200px;
+}
+
+.balance .content {
+  font-size: 1rem;
+  color: #000
+}
+
+.balance .sub{
+  font-style: italic;
+}
+
+.balance label{
+  display: block;
+  margin: 0px 0px 2px -6px;
+}
+
+.balance label.centered {
+  text-align: center;
+  margin: 2px 0px 0px 0px;
+}
+
+.balance .title {
+  margin-bottom: 6px;
+}
+
+.balance button {
+  width: 100%;
+  max-width: 200px;
+  margin: 12px auto 0px;
 }
 
 button {
@@ -184,4 +220,5 @@ button:active {
   text-align: center;
   margin: 15% auto;
   border: 2px solid #ddd;
+  padding: 16px 32px;
 }
