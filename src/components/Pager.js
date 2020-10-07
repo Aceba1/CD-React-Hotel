@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import NavBar from './NavBar'
-import Rental from './Rental'
-import Return from './Return'
+import RentalPage from './RentalPage'
+import ReturnPage from './ReturnPage'
 
 export default function Pager() {
   const [showReturn, setPage] = useState(false)
@@ -10,8 +10,8 @@ export default function Pager() {
       <NavBar page={showReturn} setPage={setPage} />
       {
         !showReturn ? 
-        (<Rental/>) : 
-        (<Return/>)
+        (<RentalPage/>) : 
+        (<ReturnPage/>)
       }
     </div>
   )

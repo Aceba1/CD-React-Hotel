@@ -1,9 +1,3 @@
-
-/**
- * @param {*[][]} rooms
- * @param {({renter: string, price: number, room: number}) => boolean} allow 
- * @returns {[]|false}
- */
 export default function filterRooms(rooms, allow = (room, fl_index, rm_index) => {return true}) {
   let filter = [];
   let hasContent = false;

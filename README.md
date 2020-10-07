@@ -28,3 +28,17 @@
   - 17:31 - Completed handleClick function within ExpressRental, it now creates a new array with the modified room set to the renter. Rental and Return pages of site both update accordingly
   - 17:41 - Cleaning up ExpressRental.js & Rental.js, resolved exceptions caused by unsaved files
   - 17:48 - Cleaned up styling, added more information to ExpressRental, back to work
+  - 17:56 - Github resync, checked in with class on Slack
+  - 18:06 - Added onClick check to RoomItem, restyled display, simplified ExpressRental room property
+  - 18:10 - Commented & cleaned up ExpressRental logic, stopped rendering of FloorItem.js if no items present (hide label)
+  - 18:24 - RoomItems can now be clicked, and trigger a callback fundtion with the clicked room's name (ID). Added styling to hint functionality
+  - 18:31 - Researching modal popups as reference for room return, adding styling and creating PopupReturn.js 
+  - 18:37 - Updated RoomItem to hide renter's name, adding state logic within Return page to pass to PopupReturn
+  - 18:51 - Adding logic & inputs to PopupReturn, fxied CSS styling, relocating ExpressRental room modifier to utility
+  - 19:02 - Modified RoomsList to return room on click, Return page & PopupReturn logic to use room accordingly and wipe renter from specified room  
+  - 19:05 - Resolved modal background click bleeding
+  - 19:08 - Testing success!
+  - 19:19 - Final styling, feedback etcetera
+  - 19:33 - Confirmed state with instructor, cleaning up unused code (& recovering from memory crash)
+  - 19:50 - Moved modal to new component, updated styling for express & return to match, cleaned up return prompt log, changed prompts to forms to allow enter key
+  - 20:00 - Added auto-focusing to prompts, cleaned up all warnings. Done.

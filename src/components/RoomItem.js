@@ -1,16 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 function RoomItem(props) {
+  const {room, price, renter} = props.room;
+  const rented = renter && renter !== "";
   return (
-    <div className="room-item">
-      {props.room.room}      
+    <div className={"room-item " + props.className} onClick={props.onClick}>
+      <div>Room {room}</div>
+      <div>${price}{rented ? " - Occupied"/*` - ${renter}` --Not supposed to show renter!--*/:""}</div> 
     </div>
   )
-}
-
-RoomItem.propTypes = {
-
 }
 
 export default RoomItem

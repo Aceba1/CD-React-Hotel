@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Button from './Button'
 
 function NavBar(props) {
@@ -12,10 +11,6 @@ function NavBar(props) {
       </nav>
     </header>
   )
-}
-
-NavBar.propTypes = {
-
 }
 
 export default NavBar
