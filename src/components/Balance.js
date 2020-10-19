@@ -12,9 +12,15 @@ export default function Balance() {
 
   const handleDeposit = () => {
     if (!canWithdraw) return;
+
     const delta = balance.store - balance.pinned;
     console.log(`Deposited ${delta} to bank`);
-    let newBalance = { store: balance.pinned, pinned: balance.pinned, bank: balance.bank + delta }
+
+    let newBalance = { 
+      store: balance.pinned, 
+      pinned: balance.pinned, 
+      bank: balance.bank + delta 
+    }
     setBalance(newBalance);
   };
 
@@ -33,7 +39,7 @@ export default function Balance() {
             <div>
               <Button className={(canWithdraw?"active":"inactive disabled")} text="Deposit funds" onClick={handleDeposit} />
             </div>
-      <label className="label centered">Bank: ${balance.bank}</label>
+            <label className="label centered">Bank: ${balance.bank}</label>
           </div>
         </Modal>
       ) : null
