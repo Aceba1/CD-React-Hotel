@@ -1,8 +1,3 @@
-### Todo:
-[ ] RoomsContext
-  [ ] 
-  [ ] RoomsInitializer
-
 ### So far:
 - 10/6/2020
   - 15:00 - Created React App & Installed NPM packages
