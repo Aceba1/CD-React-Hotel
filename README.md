@@ -1,7 +1,7 @@
 # React Hotel
 A project that experiments with React hooks and UI elements. Demonstrates a front-end for hotel room management.
 
-### So far:
+### Dev Log:
 - 10/6/2020
   - 15:00 - Created React App & Installed NPM packages
   - 15:01 - Added launch.json, server is up and running
